@@ -8,6 +8,7 @@
   <meta name="author" content="Aliza Mangi" />
   <meta name="keywords" content="Aliza Mangi, Portfolio, Web Developer, Software Engineer, SZABIST, Projects" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -40,19 +41,19 @@
     </div>
   </section>
 
-<!-- About Section -->
-<section id="about" class="about">
-  <div class="container about-content">
-    <img src="profile-min.jpeg" alt="Aliza Mangi" loading="lazy" class="profile-img" />
-    <div>
-      <h2>About Me</h2>
-      <p>Hello! I'm <strong>Aliza Mangi</strong>, a Software Engineering student at SZABIST Karachi (Batch 2023–2027)...</p>
-      <p>I enjoy building responsive web applications and exploring tools...</p>
-      <p>My academic background includes hands-on projects...</p>
-      <p>When I’m not coding, I enjoy cricket, motorbiking, and staying engaged with current affairs.</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <img src="profile-min.jpeg" alt="Aliza Mangi" loading="lazy" class="profile-img" />
+      <div>
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Aliza Mangi</strong>, a Software Engineering student at SZABIST Karachi (Batch 2023–2027)...</p>
+        <p>I enjoy building responsive web applications and exploring tools...</p>
+        <p>My academic background includes hands-on projects...</p>
+        <p>When I’m not coding, I enjoy cricket, motorbiking, and staying engaged with current affairs.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Projects Section -->
   <section id="projects" class="projects">
@@ -93,9 +94,15 @@
     <div class="container">
       <h2>Contact Me</h2>
       <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Your Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+
         <button type="submit">Send Message</button>
       </form>
     </div>
