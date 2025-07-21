@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,6 @@
   <meta name="author" content="Aliza Mangi" />
   <meta name="keywords" content="Aliza Mangi, Portfolio, Web Developer, Software Engineer, SZABIST, Projects" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -93,16 +93,16 @@
   <section id="contact" class="contact card">
     <div class="container">
       <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Your Name" required />
-
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Your Email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-
+      <form action="mailto:aliza@example.com" method="POST">
+        <label>
+          <input type="text" placeholder="Your Name" name="name" required />
+        </label>
+        <label>
+          <input type="email" placeholder="Your Email" name="email" required />
+        </label>
+        <label>
+          <textarea placeholder="Your Message" name="message" required></textarea>
+        </label>
         <button type="submit">Send Message</button>
       </form>
     </div>
