@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: #f7f7f7;
+  --text-color: #222;
+  --linkedin-color: #0077b5;
+  --github-color: #171515;
+  --card-bg: #ffffff;
+  --hover-bg: #eeeeee;
+  --accent: #444444;
+  --hover-accent: #333333;
+  --nav-hover: #dddddd;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.header {
+  background-color: var(--accent);
+  color: white;
+  padding: 6px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover {
+  color: var(--nav-hover);
+  border-bottom: 2px solid var(--nav-hover);
+}
+
+.nav a:visited {
+  color: white;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px var(--shadow);
+  margin-bottom: 3rem;
+}
+
+.home {
+  background-color: var(--hover-bg);
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-content img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  padding: 36px;
+  flex: 1 1 320px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  background-color: var(--hover-bg);
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: var(--hover-accent);
+  text-decoration: underline;
+}
+
+.project-card a:visited {
+  color: var(--accent);
+}
+
+.contact.card {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+form input,
+form textarea {
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+}
+
+form button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: var(--hover-accent);
+  transform: scale(1.05);
+}
+
+#contact {
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  color: var(--accent);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer .social-icons a {
+  margin: 0 0.75rem;
+  font-size: 1.6rem;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer .social-icons a[href*="linkedin"]:hover {
+  color: var(--linkedin-color);
+}
+
+.footer .social-icons a[href*="github"]:hover {
+  color: var(--github-color);
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .header .container,
+  .about-content,
+  .project-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
