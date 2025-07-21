@@ -1,3 +1,4 @@
+/* Profile Image */
 .profile-img {
   width: 160px;
   height: 160px;
@@ -6,6 +7,7 @@
   box-shadow: 0 4px 10px var(--shadow);
 }
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -109,14 +111,6 @@ section {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-}
-
-.about-content img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px var(--shadow);
 }
 
 .project-list {
